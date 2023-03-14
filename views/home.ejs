@@ -1,0 +1,59 @@
+<%- include('./partials/header.ejs') %>
+
+<section id="hero">
+  <div class="container text-center hero-text-container">
+    <p class="mb-5 heading-2 light hero-text">Big flavours and good times</p>
+  </div>
+</section>
+
+<section id="hero-images">
+  <div class="d-flex align-items-center hero-images-container">
+    <div class="hero-image image-1"></div>
+    <div class="hero-image image-2"></div>
+    <div class="hero-image image-3"></div>
+    <div class="hero-image image-4"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container text-center about-container">
+    <p class="mb-5 heading-5 light about-title">
+      Family friendly <br />
+      Bar/restaurant in the <br />
+      heart of Aberdeen
+    </p>
+    <p class="para-2 gray my-5 mx-auto about-body">
+      Firing up an awesome selection of loaded fries, Burgers, Salads, Sides and whatever else we fancy bashing
+      together. Carefully selected ingredients, homemade sauces and creative team bringing you a unique foodie
+      experience. Serving up local craft beers, wines and cocktails all with a casual and friendly Service. open till 12
+      am friday and saturday for drinks, tunes and vibes.
+    </p>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="container text-center menu-link-box">
+    <p class="heading-2 light menu-link-box-title">our menu</p>
+    <a class="link-button" target="_blank" href="<%- links.justEatMenu %>">order online</a>
+  </div>
+
+  <div class="d-flex justify-content-between align-items-center menu-images">
+    <div class="menu-image image-1"></div>
+    <div class="menu-image image-2"></div>
+    <div class="menu-image image-3"></div>
+  </div>
+</section>
+
+<section id="location">
+  <div class="container d-flex justify-content-center text-center">
+    <p class="mb-5 heading-3 light location-title">Locations</p>
+    <div class="d-flex flex-column justify-content-between pb-5 location-card">
+      <div class="mb-4 mb-lg-3 location-image"></div>
+      <h5 class="heading-4 dark location-card-title">The Moon</h5>
+      <p class="para-3 gray location-address">563 George street<br />Aberdeen AB25 3XX</p>
+      <a class="align-self-center link-button btn-location" target="_blank" href="<%- links.location %>">view map</a>
+    </div>
+  </div>
+</section>
+
+<%- include('./partials/footer.ejs') %>

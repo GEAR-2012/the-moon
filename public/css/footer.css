@@ -1,0 +1,70 @@
+/* Mobile first design */
+
+.footer-container {
+  background-color: var(--theme-color-dark-1)
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+.footer-brand-logo-container {
+  height: 80px;
+}
+
+.footer-brand-logo-container svg {
+  height: 100%;
+  fill: var(--theme-color-light);
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  stroke-linejoin: round;
+  stroke-miterlimit: 2;
+}
+
+.contacts a {
+  text-decoration: none;
+}
+
+.footer-social-links svg {
+  height: 1.25rem;
+  fill: var(--theme-color-gray-1);
+  margin: auto;
+}
+
+.footer-social-links a {
+  text-decoration: none;
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+  border: 2px solid var(--theme-color-gray-3);
+  border-radius: 50%;
+  display: flex;
+}
+
+@media screen and (min-width: 576px) {
+  .footer-social-links a {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer-social-links a {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social-links a {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .footer-social-links a {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}

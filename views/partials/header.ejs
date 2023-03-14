@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/b3d5dbe4aa.js" crossorigin="anonymous" defer></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/home-page.css" />
+    <!-- JavaScript -->
+    <script src="./main.js" defer></script>
+    <title>The Moon</title>
+  </head>
+  <body>
+    <header>
+      <nav id="main-navbar" class="navbar fixed-top main-navbar">
+        <div class="container-fluid px-1 px-sm-3 px-lg-5">
+          <button
+            class="navbar-toggler menu-btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+          >
+            <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.5 16.5">
+              <g transform="translate(-81.25 -68.25)">
+                <line x2="40" transform="translate(82.5 69.5)"></line>
+                <line x2="36" transform="translate(82.5 76.5)"></line>
+                <line x2="32" transform="translate(82.5 83.5)"></line>
+              </g>
+            </svg>
+          </button>
+          <div id="brand-logo-container" class="brand-logo-container">
+            <a href="/"><%- icons.brandLogo %></a>
+          </div>
+          <div class="navbar-nav d-flex justify-content-end flex-row main-navbar-nav">
+            <a class="nav-link main-nav-links" href="/order">Order Food</a>
+            <a class="nav-link main-nav-links" href="/menu">Our Menu</a>
+          </div>
+          <div
+            class="offcanvas offcanvas-start text-center gap-3 px-4 py-5 offcanvas-menu-panel"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header d-flex justify-content-end offcanvas-menu-header">
+              <button type="button" class="menu-close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-regular fa-x offcanvas-close-btn"></i>
+              </button>
+            </div>
+            <div class="offcanvas-body d-flex offcanvas-menu-body">
+              <div class="navbar-nav gap-3 m-auto align-items-center">
+                <a class="nav-link offcanvas-nav-links" href="/">Home</a>
+                <a class="nav-link offcanvas-nav-links" href="/order">Order Food</a>
+                <a class="nav-link offcanvas-nav-links" href="/menu">Our Menu</a>
+                <a class="nav-link offcanvas-nav-links" href="/about">About Us</a>
+              </div>
+            </div>
+            <div class="offcanvas-footer d-flex flex-column gap-5 offcanvas-menu-footer">
+              <!-- contact -->
+              <div class="d-flex flex-column gap-3 text-center contacts-offcanvas">
+                <a href="tel:07453255854">
+                  <p class="heading-6 dark">07453 255854</p>
+                </a>
+                <a target="_blank" href="mailto:themoon.aberdeen@gmail.com">
+                  <p class="heading-6 dark">themoon.aberdeen@gmail.com</p>
+                </a>
+              </div>
+              <!-- social icons -->
+              <div class="d-flex justify-content-center gap-2 offcanvas-social-links">
+                <a target="_blank" href="<%= links.instagram %>"><%- icons.instagram %></a>
+                <a target="_blank" href="<%= links.facebook %>"><%- icons.facebook %></a>
+                <a target="_blank" href="<%= links.deliveroo %>"><%- icons.deliveroo %></a>
+                <a target="_blank" href="<%= links.tripadvisor %>"><%- icons.tripadvisor %></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="py-2 py-md-3 py-lg-5 main-wrapper">
