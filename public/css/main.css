@@ -51,7 +51,6 @@ body {
 
 @media screen and (min-width: 992px) {
   body {
-    background-color: var(--theme-color-dark-2);
     background-image: url('../pictures/main/img-main-01.jpg');
     background-repeat: no-repeat;
     background-size: cover;
