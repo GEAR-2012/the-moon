@@ -100,6 +100,7 @@
   background-image: url('../pictures/main/img-main-01.jpg');
   background-size: cover;
   background-position: top;
+  position: relative;
 }
 
 @media screen and (min-width: 992px) {

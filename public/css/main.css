@@ -1,10 +1,10 @@
 /* Mobile first design */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dekko&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /* 
 Used fonts:
-font-family: 'Tilt Neon', cursive;
+font-family: 'Dekko', cursive;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif;
 */
@@ -21,17 +21,15 @@ xxl: >=1400px
 
 :root {
   /* colors */
-  --theme-color-dark-1: #000;
-  --theme-color-dark-2: #0a0a0a;
-  --theme-color-dark-2-alpha: #0a0a0a00;
+  --theme-color-dark-1: #1c1c1c;
+  --theme-color-dark-2: #212121;
+  --theme-color-dark-2-alpha: #21212100;
   --theme-color-dark-3: #222;
   --theme-color-light: #fefefe;
   --theme-color-gray-1: #ccc;
   --theme-color-gray-2: #666;
   --theme-color-gray-3: #444;
-  --theme-color-accent-1: #ef7726;
-  --theme-color-accent-2: #f1b917;
-  --theme-color-accent-3: #dd4b95;
+  --theme-color-accent-1: #e36100;
   /* other  */
   --navbar-height-sm: 80px;
   --navbar-height-md: 100px;
@@ -56,19 +54,24 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: top;
-    background-position-y: var(--navbar-height-lg);
     position: relative;
   }
 
   body::before {
     content: '';
-    background: linear-gradient(180deg, var(--theme-color-dark-2) 0%, var(--theme-color-dark-2-alpha) 50%, var(--theme-color-dark-2) 100%);
+    background: linear-gradient(
+       #212121ff 0%,
+       #212121f0 20%,
+       #21212100 37.5%,
+        #212121f0 55%,
+        #212121ff 100%
+        );
     ;
     position: absolute;
-    top: 0;
+    top: calc(var(--navbar-height-lg) * -1);
     left: 0;
-    width: 100%;
-    height: 100%;
+    bottom: 0;
+    right: 0;
     z-index: -1;
   }
 }
@@ -97,7 +100,7 @@ a {
 .heading-4,
 .heading-5,
 .heading-6 {
-  font-family: 'Tilt Neon', cursive;
+  font-family: 'Dekko', cursive;
   font-weight: 700;
   line-height: 1;
   margin: 0;
@@ -170,13 +173,14 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--theme-color-accent-3);
+  background-color: var(--theme-color-accent-1);
   transform: skew(-5deg);
 }
 
 /* BODY */
 .main-wrapper {
   margin-top: var(--navbar-height-sm);
+  min-height: 90vh;
 }
 
 @media screen and (min-width: 768px){
